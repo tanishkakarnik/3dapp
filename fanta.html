@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fanta Brand</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+           .row {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+      }
+      .col {
+        /* border: 1px solid black; */
+      }
+
+      .canvas-container-fanta {
+        position: relative;
+        /* border: 1px solid rgb(207, 5, 5); */
+
+        /* background-color: blanchedalmond; */
+      }
+       .loading-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(7, 7, 7);
+        text-align: center;
+      }
+
+        .disc-text-container {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 0.5rem;
+        text-align: center;
+      }
+
+      .disc-text {
+        font-size: 0.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(7, 7, 7);
+        text-align: center;
+      }
+      .camera-btns {
+  float: right;
+  text-align: right;
+}
+
+.btn-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+    </style>
+</head>
+<body>
+    <!-- Logo and nav bar -->
+    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+        <div class="container">
+            <div class="logo">
+                <a class="navbar-brand" href="index.html">
+                    <h1>1</h1>
+                    <h1>oca</h1>
+                    <h2>Cola</h2>
+                    <h3>Journey</h3>
+                    <p>Refreshing the world, one story at a time</p>
+                </a>
+            </div>
+            
+            <!-- Collapsible NavBar Menu Icon -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Drinks</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="coke.html">Coca Cola</a>
+                            <a class="dropdown-item" href="sprite.html">Sprite</a>
+                            <a class="dropdown-item" href="fanta.html">Fanta</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     <!-- Main body-->
+     <div class="container main_contents">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="main_3d_image">
+                    <div id="main_text" class="col-xs-12 col-sm-4">
+                        <h2>Coca cola Great Britain</h2>
+                        <h3> Founded by Dr John S Pemberton</h3>
+                        <p>The Coca‑Cola Company is the world's leading manufacturer, marketer and distributor of
+                            non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- Row of Cards of Grid-->
+  <div class="row">
+    <div class="col-sm-4">
+        <div class="card">
+        <a href="#">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/fantalogo.jpg" alt="Dr Pepper">
+        </a>
+        <div class="card-body">
+            <h3 class="card-title">Fanta</h3>
+            <p class="card-text">So let’s start this story at the beginning. 
+                Fanta traces its origins back to World War II. At the time, the Coca-Cola business in Germany was one of the world’s most successful, second only to the company’s sales in the United States. 
+                The modern version of Fanta. The Fanta we know now was born in Naples, Italy, where in 1955 Coca-Cola began using local citrus to formulate the now famous orange flavour.
+            Bright, bubbly and popular, Fanta is the soft drink that intensifies fun. Introduced in 1940, Fanta is the second oldest brand of The Coca-Cola Company. </p>
+            <a href="#" class="btn btn-primary">Show 3d Model</a>
+        </div>
+        </div>
+    </div>
+     <div class="canvas-container-fanta col-sm-8">
+        <div class="loading-text" id="loadingText">Loading...</div>
+          <div class="disc-text-container">
+         <span class="disc-text">
+           I designed a 3D model in Blender, a comprehensive 3D modeling software, and exported it in the GLB (GL Transmission Format Binary) format, which is a widely-used format for 3D models optimized for web applications. After exporting, I integrated the model into my website using Three.js, a powerful JavaScript library for creating and displaying 3D graphics in a web browser. By writing a script that initializes a Three.js scene, sets up a camera and lighting, and loads the GLB model with the GLTFLoader, I was able to render the 3D model interactively on the webpage, enhancing the visual experience for users.
+        </span>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</div>
+</div>
+</div>
+
+<div class="camera-btns">
+    <p class="card-text">These buttons are to show the 3D model viewpoints</p>
+    <div class="btn-group ">
+        <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+        <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+        <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+        <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+        <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
+        <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
+    </div>
+
+ <script type="module" src="./script.js"></script>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then fontawesome -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/772dedc655.js" crossorigin="anonymous"></script>
+
+    
+</body>
+
+</html>

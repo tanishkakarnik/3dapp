@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Coca Cola Brand</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+    <style>
+      .row {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+      }
+      .col {
+        /* border: 1px solid black; */
+      }
+
+      .canvas-container-coke {
+        position: relative;
+        /* border: 1px solid rgb(207, 5, 5); */
+
+        /* background-color: blanchedalmond; */
+      }
+
+      .loading-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(7, 7, 7);
+        text-align: center;
+      }
+
+      .disc-text-container {
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 0.5rem;
+        text-align: center;
+      }
+
+      .disc-text {
+        font-size: 0.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(7, 7, 7);
+        text-align: center;
+      }
+
+      .camera-btns {
+  float: right;
+  text-align: right;
+}
+
+.btn-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+    </style>
+  </head>
+  <body>
+    <!-- Logo and nav bar -->
+    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+      <div class="container">
+        <div class="logo">
+          <a class="navbar-brand" href="index.html">
+            <h1>1</h1>
+            <h1>oca</h1>
+            <h2>Cola</h2>
+            <h3>Journey</h3>
+            <p>Refreshing the world, one story at a time</p>
+          </a>
+        </div>
+
+        
+
+        <!-- Collapsible NavBar Menu Icon -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+                >Drinks</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="coke.html">Coca Cola</a>
+                <a class="dropdown-item" href="sprite.html">Sprite</a>
+                <a class="dropdown-item" href="fanta.html">Fanta</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Main body-->
+    <div class="container main_contents">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="main_3d_image">
+            <div id="main_text" class="col-xs-12 col-sm-4">
+              <h2>Coca cola Great Britain</h2>
+              <h3>Founded by Dr John S Pemberton</h3>
+              <p>
+                The Coca‑Cola Company is the world's leading manufacturer,
+                marketer and distributor of non-alcoholic beverage concentrates
+                and syrups, and produces nearly 400 brands.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Row of Cards of Grid-->
+    <div class="row">
+      <!-- Coca cola Column-->
+      <div class="col-sm-4 col">
+        <div class="card">
+          <a href="#">
+            <img
+              class="card-img-top img-fluid img-thumbnail"
+              src="assets/images/coca_cola.jpg"
+              alt="Coca Cola"
+            />
+          </a>
+          <div class="card-body">
+            <h3 class="card-title">Coca Cola</h3>
+            <p class="card-text">
+              History of Coca Cola: 1886-1892 Atlanta Beginnings: It was 1886,
+              and in New York Harbour, workers were constructing the Statue of
+              Liberty. Eight hundred miles away, another great American symbol
+              was about to be unveiled. Like many people who change history,
+              John Pemberton, an Atlanta pharmacist, was inspired by simple
+              curiosity.
+            </p>
+            <a href="coke.html" class="btn btn-primary">Show 3d Model</a>
+          </div>
+        </div>
+      </div>
+      <div class="canvas-container-coke col-sm-8">
+        <div class="loading-text" id="loadingText">Loading...</div>
+        <div class="disc-text-container">
+          <span class="disc-text">
+            I designed a 3D model in Blender, a comprehensive 3D modeling
+            software, and exported it in the GLB (GL Transmission Format Binary)
+            format, which is a widely-used format for 3D models optimized for
+            web applications. After exporting, I integrated the model into my
+            website using Three.js, a powerful JavaScript library for creating
+            and displaying 3D graphics in a web browser. By writing a script
+            that initializes a Three.js scene, sets up a camera and lighting,
+            and loads the GLB model with the GLTFLoader, I was able to render
+            the 3D model interactively on the webpage, enhancing the visual
+            experience for users.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="camera-btns">
+      <p class="card-text">These buttons are to show the 3D model viewpoints</p>
+      <div class="btn-group ">
+          <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+          <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+          <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+          <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+          <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
+          <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
+      </div>
+
+    <!-- <script type="module">
+      import * as THREE from "https://cdn.skypack.dev/three@0.134.0";
+      import { FontLoader } from "https://cdn.skypack.dev/three@0.134.0/examples/jsm/loaders/FontLoader.js";
+      import { TextGeometry } from "https://cdn.skypack.dev/three@0.134.0/examples/jsm/geometries/TextGeometry.js";
+      import { OrbitControls } from "https://cdn.skypack.dev/three@0.134.0/examples/jsm/controls/OrbitControls.js";
+      import { GLTFLoader } from "https://cdn.skypack.dev/three@0.134.0/examples/jsm/loaders/GLTFLoader.js";
+      import { RGBELoader } from "https://cdn.skypack.dev/three@0.134.0/examples/jsm/loaders/RGBELoader.js";
+
+      // Create scene
+      const scene = new THREE.Scene();
+      let cokeModel;
+      // Create camera
+      const camera = new THREE.PerspectiveCamera(
+        95, // reduced FOV
+        window.innerWidth / window.innerHeight,
+        0.1,
+        5000
+      );
+      camera.position.set(0, 0, 5); // Position the camera at the center of the cube
+
+      // Create renderer
+      const renderer = new THREE.WebGLRenderer({
+        antialias: true,
+        alpha: true,
+      });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document
+        .querySelector(".canvas-container-coke")
+        .appendChild(renderer.domElement);
+
+      // Add ambient light
+      const ambientLight = new THREE.AmbientLight(0xfffffff, 2);
+      scene.add(ambientLight);
+
+      //Add directional light
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+      directionalLight.position.set(1, 1, 1).normalize();
+      scene.add(directionalLight);
+
+      //Add directional light
+      const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.5);
+      directionalLight2.position.set(1, 1, -1).normalize();
+      scene.add(directionalLight2);
+
+      //add cube
+      //   const geometry = new THREE.BoxGeometry(1, 1, 1);
+      //   const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+      //   const cube = new THREE.Mesh(geometry, material);
+      //   scene.add(cube);
+
+      const controls = new OrbitControls(camera, renderer.domElement);
+      //restrict movement
+      controls.minPolarAngle = Math.PI / 2; // Minimum angle (45 degrees)
+      controls.maxPolarAngle = Math.PI / 2; // Maximum angle (45 degrees)
+      //restrict zoom
+      controls.enableZoom = false;
+
+      new RGBELoader().load(
+        "https://res.cloudinary.com/dutzpli8z/raw/upload/v1715801358/cbtu0qentrhp1i87fkyd.hdr",
+        function (texture) {
+          texture.mapping = THREE.EquirectangularReflectionMapping;
+
+          scene.environment = texture;
+          //adjust intensity
+
+          //load model
+          const modelLoader = new GLTFLoader();
+          modelLoader.load("./assets/models/cola.glb", function (gltf) {
+            cokeModel = gltf.scene;
+            cokeModel.scale.set(5, 5, 5);
+            cokeModel.rotation.set(0, 0, 0);
+            cokeModel.position.set(0, -2.5, 0);
+            if (window.innerWidth < 500) {
+              cokeModel.scale.set(4, 4, 4);
+            }
+            scene.add(cokeModel);
+
+            document.getElementById("loadingText").style.display = "none";
+          });
+        }
+      );
+
+      //animate
+      function animate() {
+        requestAnimationFrame(animate);
+        if (cokeModel) {
+          cokeModel.rotation.y += 0.01; // Adjust rotation speed as desired
+        }
+
+        controls.update();
+        renderer.render(scene, camera);
+      }
+
+      animate();
+
+      // Resize handler
+      function onWindowResize() {
+        const canvasDiv = document.querySelector(".canvas-container-coke");
+        camera.aspect = canvasDiv.clientWidth / canvasDiv.clientHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(canvasDiv.clientWidth, canvasDiv.clientHeight);
+      }
+
+      // Add event listener for window resizes
+      window.addEventListener("resize", onWindowResize, false);
+
+      // Call resize handler once to set initial size
+      onWindowResize();
+    </script> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then fontawesome -->
+    <script type="module" src="./script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/772dedc655.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
